@@ -1,18 +1,23 @@
-// pages/chat.js
-import Header from '../components/Header';
+import { commonStyles } from '../styles/common';
 
 const Chat = () => {
     return (
         <>
-            <Header />
-            <main>
-                <h1>Chat Page</h1>
-            </main>
+            <style jsx global>{commonStyles}</style>
+            <section className="page-container">
+                <div className="title-block">
+                    <h1>Chat Page</h1>
+                </div>
+                <div className="chat-content">
+                    {/* Specific styles for chat page */}
+                </div>
+            </section>
             <style jsx>{`
-                main {
-                    padding: 2rem;
-                    background: white;
-                    min-height: 80vh;
+                .chat-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
             `}</style>
         </>

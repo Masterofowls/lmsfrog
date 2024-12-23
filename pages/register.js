@@ -1,18 +1,23 @@
-// pages/register.js
-import Header from '../components/Header';
+import { commonStyles } from '../styles/common';
 
 const Register = () => {
     return (
         <>
-            <Header />
-            <main>
-                <h1>Register Page</h1>
-            </main>
+            <style jsx global>{commonStyles}</style>
+            <section className="page-container">
+                <div className="title-block">
+                    <h1>Register Page</h1>
+                </div>
+                <div className="register-content">
+                    {/* Specific styles for register page */}
+                </div>
+            </section>
             <style jsx>{`
-                main {
-                    padding: 2rem;
-                    background: white;
-                    min-height: 80vh;
+                .register-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
             `}</style>
         </>

@@ -1,20 +1,20 @@
-// pages/courses.js
-import Header from '../components/Header';
+import { commonStyles } from '../styles/common';
 
 const Courses = () => {
     return (
         <>
-            <Header />
-            <main>
-                <h1>Courses Page</h1>
-            </main>
-            <style jsx>{`
-                main {
-                    padding: 2rem;
-                    background: white;
-                    min-height: 80vh;
-                }
-            `}</style>
+            <style jsx global>{commonStyles}</style>
+            <section className="page-container">
+                <div className="title-block">
+                    <h1>Courses Page</h1>
+                </div>
+                <div className="cards-block">
+                    <div className="card">Course A</div>
+                    <div className="card">Course B</div>
+                    <div className="card">Course C</div>
+                    <div className="card">Course D</div>
+                </div>
+            </section>
         </>
     );
 };
